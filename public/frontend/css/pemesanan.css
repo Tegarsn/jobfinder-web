@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar-right a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-right .lowongan-pekerjaan:hover {
+  color: blue;
+  opacity: 0.7;
+}
+
+.navbar-right .freelancer {
+  color: green;
+  opacity: 0.7;
+}
+
+.navbar-right .freelancer:hover {
+  opacity: 1;
+}
+
+.navbar-right .material-icons-outlined {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-right .profile-circle {
+  margin-right: 50px;
+  margin-left: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.navbar-right .profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-right .profile-circle:hover {
+  opacity: 0.8;
+}
+
+.navbar-right a:hover {
+  text-decoration: none;
+}
+
+
+
+.search-bar form {
+  margin-left: 20px;
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.search-bar form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 1px solid #0A65CC;
+  outline: none;
+  border-radius: 10px;
+}
+
+.search-bar form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #0A65CC;
+  color: white;
+  box-shadow: 0px 0px #000, 0px 0px 5px #858585;
+  top: 6px;
+  right: 6px;
+}
+.freelancer-status {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 20px; /* Beri jarak dari elemen sebelumnya */
+}
+
+.freelancer-status strong {
+  color: green;
+  font-weight: bold;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px; /* Ukuran lingkaran */
+  height: 10px;
+  background-color: green; /* Warna lingkaran */
+  border-radius: 50%; /* Membuatnya bulat */
+  margin-left: 8px; /* Jarak ke teks */
+}
+
+/* Product Card */
+.product-card {
+  display: flex;
+  max-width: 90%;
+  margin: 40px 60px;
+}
+
+/* Image section */
+.product-imgs {
+  flex: 1;
+}
+
+.img-display {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.img-showcase {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.img-showcase img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-showcase img.active {
+  opacity: 1;
+}
+
+/* Thumbnail Images */
+.img-select {
+  display: flex;
+  margin-top: 10px;
+}
+
+.img-item {
+  margin: 0.3rem;
+}
+
+.img-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Content Section */
+.product-content {
+  flex: 1;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Product Price */
+.price-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-price {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Product Detail */
+.product-detail h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.6rem;
+}
+
+.product-detail p {
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  color: #555;
+}
+
+.product-detail ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-detail ul li {
+  margin: 0.5rem 0;
+}
+
+.product-detail ul li span {
+  font-weight: 600;
+}
+
+/* Purchase Info */
+.purchase-info {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.purchase-info input {
+  width: 60px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.purchase-info .btn {
+  background: #256eff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.purchase-info .btn:hover {
+  background: #1a4db8;
+}
+
+/* Profile and Reviews Container */
+.profile-reviews-container {
+  margin-bottom: 50px;
+}
+
+/* Freelancer Profile */
+.freelancer-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.profile-image {
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.field {
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.rating {
+  font-size: 16px;
+  color: gold;
+  margin: 5px 0;
+}
+
+.rating-value {
+  font-weight: bold;
+}
+
+/* Profile Description */
+.profile-description {
+  background: #f4f4f4;
+  margin-left: 60px;
+  margin-right: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.profile-description .profile-details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.profile-description p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.6; /* Increased line-height for better readability */
+}
+
+.profile-description strong {
+  font-weight: 600;
+  color: #12263a; /* Ensure strong text stands out */
+}
+
+.description-text {
+  margin-top: 10px; /* Added margin-top to separate the description */
+  font-size: 16px;
+  color: #555;
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 80px;
+}
+
+.reviews-section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #12263a; /* Add a deeper color to make the heading stand out */
+  border-bottom: 2px solid #12263a; /* Underline for the heading */
+  padding-bottom: 10px;
+}
+
+.review {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex;
+  flex-direction: column;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.review-rating {
+  font-size: 16px;
+  color: gold; /* Golden stars for rating */
+}
+
+.review-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-style: italic; /* To give a sense of feedback */
+}
+
+.review-text:before {
+  content: "“"; /* Add a quote before the review */
+  font-size: 30px;
+  color: #aaa;
+  position: absolute;
+  top: -5px;
+  left: -10px;
+}
+
+.review-text:after {
+  content: "”"; /* Add a quote after the review */
+  font-size: 30px;
+  color: #aaa;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+}
+
+/* Related Products Section */
+.related-products {
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 80px;
+}

@@ -1,0 +1,308 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F2F5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #008CBA, #005A8C);
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sidebar h1 img {
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #F8F9FB;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.header .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.header .search-bar i {
+    color: #008CBA;
+}
+
+.header .user-actions a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.header .user-actions a:hover {
+    color: #008CBA;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #008CBA;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stats .stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.2s;
+}
+
+.stats .stat:hover {
+    transform: translateY(-5px);
+}
+
+.stats .stat h3 {
+    font-size: 18px;
+    color: #008CBA;
+    margin-bottom: 10px;
+}
+
+.stats .stat p {
+    font-size: 14px;
+    color: #555;
+}
+
+.stats .stat .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.stats .stat .change {
+    font-size: 14px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #008CBA;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
+}
+
+table td {
+    color: #555;
+}
+
+/* Styling untuk tombol di dalam tabel */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Tombol Edit */
+.btn-edit {
+    background-color: #FFC107;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+/* Tombol Hapus */
+.btn-delete {
+    background-color: #DC3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Tombol Tambah di bawah tabel */
+.btn-add {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #2196F3; /* Biru */
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f44336; /* Merah */
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f; /* Merah lebih gelap */
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

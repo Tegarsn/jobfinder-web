@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F1F2F4;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-right .lowongan-pekerjaan:hover {
+  color: blue;
+  opacity: 0.7;
+}
+
+.navbar-right .freelancer {
+  color: green;
+  opacity: 0.7;
+}
+
+.navbar-right .freelancer:hover {
+  opacity: 1;
+}
+
+.navbar-right .material-icons-outlined {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-right .profile-circle {
+  margin-right: 50px;
+  margin-left: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.navbar-right .profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-right .profile-circle:hover {
+  opacity: 0.8;
+}
+
+.navbar-right a:hover {
+  text-decoration: none;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  padding: 90px 4% 0;
+  overflow: hidden;
+}
+
+.home-content {
+  max-width: 630px;
+}
+.home-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 10px 0 30px;
+}
+
+.home-img {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin-right: 200px;
+}
+
+.home-img img {
+  position: absolute;
+  left: -50px;
+  max-width: 600px;
+}
+
+.search-bar form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.search-bar form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 1px solid #0A65CC;
+  outline: none;
+  border-radius: 10px;
+}
+
+.search-bar form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #0A65CC;
+  color: white;
+  box-shadow: 0px 0px #000, 0px 0px 5px #858585;
+  top: 6px;
+  right: 6px;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.material-icons-outlined {
+  font-family: "Arial", sans-serif; /* Ini akan mengganggu */
+}
+/* fallback */
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v109/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin: 0 60px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #333;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.category-item span.material-icons-outlined {
+  font-size: 24px;
+  color: #333;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.category-item:hover {
+  background-color: #0A65CC;
+  color: white;
+  opacity: 0.8;
+}
+
+.category-item, .layanan-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-item:hover, .layanan-item:hover {
+  color: #888;
+}
+
+.layanan-item h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.layanan-populer {
+  padding: 70px;
+  background-color: #f9f9f9;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.layanan-item {
+  min-width: 20%;
+  margin: 20px 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.layanan-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.layanan-item img {
+  max-width: 100%;
+  height: 90%;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.layanan-item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0px;
+  color: #333;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+  font-size: 36px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  transition: background-color 0.3s;
+}
+
+.carousel-arrow:hover {
+  background-color: #f0f0f0;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.social-icons {
+  margin-bottom: 25px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 25px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #aaa;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #aaa;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #888;
+  margin-top: 40px;
+}
