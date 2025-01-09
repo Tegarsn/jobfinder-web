@@ -24,15 +24,11 @@ Route::get('/register', [\App\Http\Controllers\registerController::class, 'Regis
     ->name("Registerform");
 Route::post('/register', [\App\Http\Controllers\registerController::class, 'register'])->name('register');
 
-// Route::get('link', [\App\Http\Controllers\hrefController::class, 'linkpage'])
-// ->name("linkpage.uhuy");
 
 Route::get('/login', [App\Http\Controllers\loginController::class, 'formlogin'])->name('formlogin');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/logout', [ControllersLoginController::class, 'logout'])->name('logout');
 
-
-Route::get('/grapicdesign', [App\Http\Controllers\landingController::class, 'graphicdesign'])->name('graphicdesign');
 
 
 
@@ -42,7 +38,7 @@ Route::get('/Formdaftarfreelance', [App\Http\Controllers\daftarFreelanceControll
 Route::post('/freelancers', [App\Http\Controllers\daftarFreelanceController::class, 'store'])->name('freelancers.store');
 Route::get('/datafreelancer', [App\Http\Controllers\daftarFreelanceController::class, 'getfreelancer'])->name('datafreelancer');
 Route::get('/freelancer/{id}', [App\Http\Controllers\daftarFreelanceController::class, 'show'])->name('viewfreelancer');
-// Route::delete('/freelancer/($id)', [App\Http\Controllers\daftarFreelanceController:: class, 'destroy'])->name('freelancer.destroy');
+
 Route::delete('/freelancer/{id}', [App\Http\Controllers\daftarFreelanceController::class, 'destroy'])->name('freelancer.destroy');
 Route::post('/freelancer/{id}/terima', [App\Http\Controllers\daftarFreelanceController::class, 'terima'])->name('freelancer.terima');
 Route::get('/daftarfreelancewait', [App\Http\Controllers\daftarFreelanceController::class, 'wait'])->name('waitproses');
@@ -64,8 +60,8 @@ Route::get('/graphicdesain-logo', [App\Http\Controllers\GraphicDesigncontroller:
 Route::get('/Graphicdesign-Architecture', [App\Http\Controllers\GraphicDesigncontroller::class, 'arsitektur'])->name('arsitektur');
 Route::get('/Graphicdesign-interior', [App\Http\Controllers\GraphicDesigncontroller::class, 'designinterior'])->name('designinterior');
 Route::get('/Graphicdesign-Web&App', [App\Http\Controllers\GraphicDesigncontroller::class, 'webapp'])->name('webapp');
-Route::get('/Graphicdesign-3D Design', [App\Http\Controllers\GraphicDesigncontroller::class, 'dimensi'])->name('dimensi');
-Route::get('/Graphicdesign-Art Ilustrator', [App\Http\Controllers\GraphicDesigncontroller::class, 'artillustrator'])->name('artillustrator');
+Route::get('/Graphicdesign-3D-Design', [App\Http\Controllers\GraphicDesigncontroller::class, 'dimensi'])->name('dimensi');
+Route::get('/Graphicdesign-Art-Ilustrator', [App\Http\Controllers\GraphicDesigncontroller::class, 'artillustrator'])->name('artillustrator');
 Route::get('/Graphicdesign-PhotoEditor', [App\Http\Controllers\GraphicDesigncontroller::class, 'photoeditor'])->name('photoeditor');
 Route::get('/Graphicdesign-FashionEditor', [App\Http\Controllers\GraphicDesigncontroller::class, 'fashioneditor'])->name('fashioneditor');
 
@@ -118,10 +114,6 @@ Route::get('FormCheckout{id}', [App\Http\Controllers\pemesananController::class,
 Route::post('/order-jasa{id}',[App\Http\Controllers\pemesananController::class, 'store'])->name('order.store');
 
 Route::get('/yourorder', [App\Http\Controllers\freelanceController::class, 'orderuser'])->name('orderuser');
-// Route::post('/upload-jasa', [App\Http\Controllers\uploadjasaController::class, 'store'])->name('uploadjasa.store');
-
-
-Route::post('/update-payment-method', [App\Http\Controllers\freelanceController::class, 'updatePaymentMethod'])->name('update.payment.method');
 
 
 // Route::post('/order/accept', [App\Http\Controllers\freelanceController::class, 'acceptOrder'])->name('order.accept');

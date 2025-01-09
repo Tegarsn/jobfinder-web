@@ -18,9 +18,9 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-left">
-                <a href="coba.html"><img src="{{ asset ('frontend/img/quality_restoration_20240926111905403.png') }}" alt="Logo"></a>
-            </div>
+        <a href="{{ route('landing') }}">
+                <img src="{{ asset('frontend/img/quality_restoration_20240926111905403.png') }}" alt="Logo">
+            </a>
             <div class="navbar-right">
                 <a href="#" class="lowongan-pekerjaan">Lowongan Pekerjaan</a>
                 <span class="material-icons-outlined icon-mail">mail_outline</span>

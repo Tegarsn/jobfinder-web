@@ -41,6 +41,7 @@
                 </a>
                 <div id="profileDropdownContent" class="dropdown-content">
                     <a href="profile.html">Profil</a>
+                    <a href="{{ route('orderuser')}}">Order</a>
                     <a href="#"
                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         Logout

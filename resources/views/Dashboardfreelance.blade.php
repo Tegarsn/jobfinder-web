@@ -17,8 +17,9 @@
     <header>
         <nav class="navbar">
             <div class="navbar-left">
-                <a href="coba.html"><img src=" {{ asset('frontend/img/quality_restoration_20240926111905403.png') }}"
-                        alt="Logo"></a>
+                <<a href="{{ route('landing') }}">
+                <img src="{{ asset('frontend/img/quality_restoration_20240926111905403.png') }}" alt="Logo">
+            </a>
                 <div class="custom-select">
                     <select>
                         <option value="">Growth &amp; Marketing</option>
